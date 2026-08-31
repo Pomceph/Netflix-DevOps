@@ -18,7 +18,7 @@ jobs:
           echo "SHORT_SHA=$(echo ${GITHUB_SHA} | cut -c1-7)" >> $GITHUB_ENV
       - name: Build Docker Image
         run: |
-          docker build --build-arg TMDB_V3_API_KEY=${{ secrets.TMDB_V3_API_KEY }} -t pomceph/netflix:${{ env.SHORT_SHA }} ../netflix-frontend
+          docker build --build-arg TMDB_V3_API_KEY=${{ secrets.TMDB_V3_API_KEY }} -t pomceph/netflix:${{ env.SHORT_SHA }} -f netflix-frontend/Dockerfile .
       - name: Login to Dockerhub
         run: |
           echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u ${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
