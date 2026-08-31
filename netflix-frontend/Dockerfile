@@ -1,9 +1,9 @@
 FROM node:16.17.0-alpine as builder
 WORKDIR /app
-COPY ./package.json .
-COPY ./yarn.lock .
+COPY netflix-frontend\package.json .
+COPY netflix-frontend\yarn.lock . 
 RUN yarn install
-COPY . .
+COPY netflix-frontend .
 ARG TMDB_V3_API_KEY
 ENV VITE_APP_TMDB_V3_API_KEY=${TMDB_V3_API_KEY}
 ENV VITE_APP_API_ENDPOINT_URL="https://api.themoviedb.org/3"
