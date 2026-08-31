@@ -21,7 +21,7 @@ jobs:
           docker build -t pomceph/netflix:${{ env.SHORT_SHA }} .
       - name: Login to Dockerhub
         run: |
-          echo "${{ secret.DOCKERHUB_TOKEN }}" | docker login -u ${{ secret.DOCKERHUB_USERNAME }}" --password-stdin
+          echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u ${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
       - name: Push to Dockerhub
         run: |
           docker push pomceph/netflix:${{ env.SHORT_SHA }} 
