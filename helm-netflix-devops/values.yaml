@@ -1,0 +1,15 @@
+image: 
+  repository: pomceph/netflix
+  tag: latest
+  pullPolicy: IfNotPreset
+
+service:
+  type: ClusterIP
+  port: 8080
+
+ingress:
+  enabled: false
+servcieAccount: 
+  enabled: false
+autoscaling:
+  enabled: false

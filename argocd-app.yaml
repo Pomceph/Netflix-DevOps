@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: netflix-devops-project
+  namespace: argocd
+spec:
+  project: default
+  source: 
+    repoURL: "https://github.com/Pomceph/Netflix-DevOps"
+    targetRevision: HEAD
+    path: helm-netflix-devops
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+  
+  
+  
