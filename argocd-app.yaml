@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source: 
-    repoURL: "https://github.com/Pomceph/Netflix-DevOps"
+    repoURL : "https://github.com/Pomceph/Netflix-DevOps"
     targetRevision: HEAD
     path: helm-netflix-devops
   destination:
