@@ -1,7 +1,7 @@
 image: 
   repository: pomceph/netflix
   tag: f42a74b
-  pullPolicy: IfNotPreset
+  pullPolicy: IfNotPresent
 service:
   type: ClusterIP
   port: 8080
