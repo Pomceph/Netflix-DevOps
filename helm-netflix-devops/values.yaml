@@ -1,6 +1,6 @@
 image: 
   repository: pomceph/netflix
-  tag: f2241e5
+  tag: 7a490d0
   pullPolicy: IfNotPreset
 
 service:
