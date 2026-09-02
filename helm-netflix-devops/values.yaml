@@ -7,7 +7,7 @@ service:
   port: 8080
 ingress:
   enabled: false
-servcieAccount: 
+serviceAccount: 
   enabled: false
 autoscaling:
   enabled: false
