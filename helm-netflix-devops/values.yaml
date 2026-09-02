@@ -2,11 +2,9 @@ image:
   repository: pomceph/netflix
   tag: 7a490d0
   pullPolicy: IfNotPreset
-
 service:
   type: ClusterIP
   port: 8080
-
 ingress:
   enabled: false
 servcieAccount: 
