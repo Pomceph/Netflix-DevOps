@@ -1,7 +1,0 @@
-services:
-  netflix:
-    image: netflix
-    ports:
-      - "8081:80"
-
-    
