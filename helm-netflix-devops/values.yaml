@@ -1,6 +1,6 @@
 image: 
   repository: pomceph/netflix
-  tag: bc4e47d
+  tag: fd76a5d
   pullPolicy: IfNotPresent
 service:
   type: ClusterIP
