@@ -17,17 +17,12 @@
     <br> 
 </p>
 
-## Getting Started 
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+## Completed Tasks
 
-> Disclaimer: This project is intended for development and testing purposes only. 
-
-### Prerequisites
-
-- Docker Desktop
-- Terraform
-- Helm
-
-
-
+- Containerized netflix frontend source code using a dockerfile and the movie database (TMDB) API.
+- Configured Minikube with Terraform as the Kubernetes environment.
+- Automated Docker image builds and pushes with GitHub Actions.
+- Created a Helm chart for Kubernetes deployments.
+- Deployed and synced the application using ArgoCD with GitOps principles
+- Verified functionality via testing the pipeline end-to-end with updates to the application.
