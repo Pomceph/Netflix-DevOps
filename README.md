@@ -21,7 +21,7 @@
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-> Disclaimer: This project is intended for development and test purposes. 
+> Disclaimer: This project is intended for development and testing purposes only. 
 
 ### Prerequisites
 
